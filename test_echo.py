@@ -8,7 +8,7 @@ def test_get_url_field():
     response = requests.get(BASE_GET_URL)
     assert response.status_code == 200 
     response_json = response.json()
-    assert response_json["url"] == BASE_GET_URL
+    assert response_json["url"] == "http://wrong-url.com"
 
 
 def test_get_query_params():
